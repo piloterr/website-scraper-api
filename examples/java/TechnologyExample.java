@@ -19,7 +19,7 @@ public class TechnologyExample {
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://api.piloterr.com/v2/website/technology?" + query))
             .header("x-api-key", System.getenv("PILOTERR_API_KEY"))
-            .timeout(Duration.ofSeconds(60))
+            .timeout(Duration.ofSeconds(120))
             .GET()
             .build();
 

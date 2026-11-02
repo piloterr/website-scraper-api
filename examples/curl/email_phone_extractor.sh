@@ -3,6 +3,6 @@
 # Usage: PILOTERR_API_KEY=your-key ./email_phone_extractor.sh
 set -euo pipefail
 
-curl -sS -G "https://api.piloterr.com/v2/website/email_phone_extractor" \
+curl -sS --fail-with-body -G "https://api.piloterr.com/v2/website/email_phone_extractor" \
   -H "x-api-key: ${PILOTERR_API_KEY}" \
   --data-urlencode query=https://www.hexa.cc

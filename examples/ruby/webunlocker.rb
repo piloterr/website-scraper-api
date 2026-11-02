@@ -10,7 +10,7 @@ uri.query = URI.encode_www_form('query' => 'https://www.norauto.fr/t/pneu/w-185-
 request = Net::HTTP::Get.new(uri)
 request["x-api-key"] = ENV.fetch("PILOTERR_API_KEY")
 
-response = Net::HTTP.start(uri.host, uri.port, use_ssl: true, read_timeout: 60) do |http|
+response = Net::HTTP.start(uri.host, uri.port, use_ssl: true, read_timeout: 120) do |http|
   http.request(request)
 end
 

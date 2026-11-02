@@ -85,7 +85,7 @@ response = requests.get(
     params={
         "query": "https://www.example.com",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -190,7 +190,7 @@ response = requests.get(
     params={
         "query": "https://example.com",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -268,7 +268,7 @@ response = requests.get(
     params={
         "query": "https://www.hexa.cc",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -401,7 +401,7 @@ response = requests.get(
     params={
         "query": "https://example.com",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -506,7 +506,7 @@ response = requests.get(
     params={
         "url": "https://www.amazon.com/s?k=pokemon",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -584,7 +584,7 @@ response = requests.get(
     params={
         "query": "https://example.com",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -693,7 +693,7 @@ response = requests.get(
     params={
         "query": "https://www.norauto.fr/t/pneu/w-185-h-55-r-14/ete-s/80-l-h-q.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
