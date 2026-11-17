@@ -388,6 +388,7 @@ Render JavaScript-heavy pages in a headless browser and return post-render HTML.
 | `wait_for` | string | — | A CSS or XPath selector to wait for before returning the rendered HTML. The headless browser will hold the response until the specified element appears in the DOM. |
 | `block_ads` | boolean | — | Controls whether the headless browser should block ad requests during rendering. |
 | `timeout` | number | — | Maximum number of seconds to wait for the page to fully load before returning whatever has been rendered so far. |
+| `return_page_source` | boolean | — | When true, return {"result": html} instead of the raw HTML string. A proxy error page is still an error and is not returned. |
 
 ### Python example
 
